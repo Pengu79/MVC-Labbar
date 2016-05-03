@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Uppgift3
+namespace Uppgift5
 {
     public class RouteConfig
     {
@@ -14,7 +14,17 @@ namespace Uppgift3
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                "Sell","Sell/{action}/{id}",new {Controller="Sell",Action="B2B",id=UrlParameter.Optional});
+                name: "Life",
+                url: "Life/{action}/{id}",
+                defaults: new { controller = "Life", action = "Eye", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Laser",
+                url: "Laser/{action}/{id}",
+                defaults: new { controller = "Laser", action = "SuperMario", id = UrlParameter.Optional }
+            );
+
 
             routes.MapRoute(
                 name: "Default",

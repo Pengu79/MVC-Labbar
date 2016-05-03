@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5CEEC03F-3E74-4DE8-8926-024081332399}</ProjectGuid>
+    <ProjectGuid>{B41A218B-9D34-49F0-AA8F-F3EB5F5CF1E9}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Uppgift3</RootNamespace>
-    <AssemblyName>Uppgift3</AssemblyName>
+    <RootNamespace>Uppgift5</RootNamespace>
+    <AssemblyName>Uppgift5</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -92,22 +92,22 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.2.3.js" />
+    <Content Include="Scripts\jquery-2.2.3.min.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\Company\Ericsson.cshtml" />
-    <Content Include="Views\Company\Index.cshtml" />
+    <Content Include="Views\Life\Eye.cshtml" />
+    <Content Include="Views\Life\Pointer.cshtml" />
+    <Content Include="Views\Life\Printer.cshtml" />
+    <Content Include="Views\Laser\SuperMario.cshtml" />
+    <Content Include="Views\Laser\Health.cshtml" />
+    <Content Include="Views\Laser\Live.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CompanyController.cs" />
-    <Compile Include="Controllers\SellController.cs" />
+    <Compile Include="Controllers\LaserController.cs" />
+    <Compile Include="Controllers\LifeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -116,18 +116,9 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Company\EcUtbildning.cshtml" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Company\Volvo.cshtml" />
-    <Content Include="Views\Sell\B2B.cshtml" />
-    <Content Include="Views\Sell\B2C.cshtml" />
-    <Content Include="Views\Sell\C2C.cshtml" />
-    <Content Include="Views\Sell\Completion.cshtml" />
+    <Content Include="Views\Life\Sabel.cshtml" />
+    <Content Include="Scripts\jquery-2.2.3.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -152,9 +143,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>11941</DevelopmentServerPort>
+          <DevelopmentServerPort>47854</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:11941/</IISUrl>
+          <IISUrl>http://localhost:47854/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

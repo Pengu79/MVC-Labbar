@@ -4,26 +4,24 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Uppgift3.Controllers
+namespace Uppgift5.Controllers
 {
-    public class SellController : Controller
+    public class LifeController : Controller
     {
-        public ActionResult B2B()
+        // GET: Life
+        public ActionResult Sabel()
         {
             return View();
         }
-
-        public ActionResult B2C()
+        public ActionResult Eye()
         {
             return View();
         }
-
-        public ActionResult C2C()
+        public ActionResult Pointer()
         {
             return View();
         }
-
-        public ActionResult Completion()
+        public ActionResult Printer()
         {
             return View();
         }
