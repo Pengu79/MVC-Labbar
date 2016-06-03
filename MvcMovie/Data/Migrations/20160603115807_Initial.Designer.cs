@@ -8,9 +8,10 @@ using MvcMovie.Data;
 namespace MvcMovie.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20160603115807_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rc2-20901")
@@ -179,8 +180,6 @@ namespace MvcMovie.Data.Migrations
                     b.Property<string>("Genre");
 
                     b.Property<decimal>("Price");
-
-                    b.Property<string>("Rating");
 
                     b.Property<DateTime>("ReleaseDate");
 
