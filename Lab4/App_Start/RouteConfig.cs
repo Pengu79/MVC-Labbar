@@ -5,18 +5,13 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Lab2
+namespace Lab4
 {
     public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.MapRoute(
-                name: "TwentyOne",
-                url: "Games/{action}/{id}",
-                defaults: new { controller = "Games", action = "TwentyOne", id = UrlParameter.Optional }
-            );
 
             routes.MapRoute(
                 name: "Default",

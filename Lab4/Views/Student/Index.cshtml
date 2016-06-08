@@ -1,0 +1,39 @@
+﻿@model Lab4.Models.Student
+
+@{
+    ViewBag.Title = "Elever";
+}
+
+<!DOCTYPE html>
+
+<html>
+<h2>Index</h2>
+
+<div>
+    @Html.LabelFor(s => s.Name) - @Model.Name
+</div>
+<div>
+    @Html.LabelFor(s => s.LastName) - @Model.LastName
+</div>
+<div>
+    @Html.LabelFor(s => s.Personnumber) - @Model.Personnumber
+</div>
+<div>
+    @Html.LabelFor(s => s.Adress) - @Model.Adress
+</div>
+<div>
+    @Ajax.ActionLink(
+        linkText: "Details",
+        actionName: "Details",
+        controllerName: "Student",
+        ajaxOptions: new AjaxOptions
+        {
+            HttpMethod = "Get",
+            InsertionMode = InsertionMode.Replace,
+            UpdateTargetId = "gradesContainer"
+        }
+        )
+</div>
+<div id="gradesContainer"></div>
+>
+</html>

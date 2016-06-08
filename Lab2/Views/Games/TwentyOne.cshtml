@@ -1,0 +1,35 @@
+﻿@using System.Web.Mvc.Ajax
+@using System.Web.Mvc.Html
+@model Lab2.Models.TwentyOne
+
+@{
+    ViewBag.Title = "TwentyOne";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var buttonDisable = String.Empty;
+    if (Model.GameValue>=21)
+    {
+        buttonDisable = "disabled";
+    }
+}
+
+<h1>TwentyOne</h1>
+<h2 id="outputText">The current total is @Model.GameValue</h2>
+<h2>The computer played:@Model.ComputerPlayed</h2>
+<h3>@Model.WinnerText</h3>
+<div>
+    @{
+        using (Ajax.BeginForm(
+            actionName: "TwentyOne",
+            controllerName: "Games",
+            ajaxOptions: new AjaxOptions
+            {
+                HttpMethod = "Post",
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "outputText"
+            }))
+    {
+        <input type="submit" name="choice" value="1" @buttonDisable/>
+        <input type="submit" name="choice" value="2" @buttonDisable />
+        }
+    }
+</div>
